@@ -1,9 +1,0 @@
-#!/bin/ash
-if [ -t 0 ]; then
-    echo 'Input data by pipe'
-else
-    cat > data.csv
-    ipython -c "%matplotlib"
-	jupyter nbconvert test_normal.ipynb --execute --to html
-	cat test_normal.html
-fi
